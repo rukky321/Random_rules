@@ -27,6 +27,7 @@ scoreboard players set RR.config.set_same_rules random_rules 1
 scoreboard players set RR.config.individually_set_num_rules random_rules 1
 scoreboard players set RR.config.invincibility_time_after_death random_rules 10
 scoreboard players set RR.config.disable_rules_after_death random_rules 0
+scoreboard players set RR.config.show_custom_death_message random_rules 1
 
 # rule関連のデータを全て記述したストレージを作成
 function random_rules:init_storage
