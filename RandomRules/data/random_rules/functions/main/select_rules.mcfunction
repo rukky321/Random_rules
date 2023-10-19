@@ -2,8 +2,8 @@
 # 実行者の個別ストレージにランダムに選択したルールのリストを設定
 # @within random_rules:set_rules
 
-# ruleのランダム選択用ストレージをコピーしてくる
-data modify storage random_rules tmp.rules set from storage random_rules rule_numbers
+# ruleのデータを書いたストレージを持ってくる
+data modify storage random_rules tmp.rules set from storage random_rules rules
 
 # ループ用のカウントを設定
 scoreboard players set RR.select_rules.count random_rules 0
