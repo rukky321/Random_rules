@@ -16,6 +16,8 @@ scoreboard objectives add RR.num_rules dummy
 # 初期化処理
 execute unless score RR.NUM_RULES random_rules matches -2147483648..2147483647 run function random_rules:init
 
+# 各ルール処理に使うスコアなどの初期化
+function random_rules:rules/load
 
 
 
@@ -68,6 +70,17 @@ execute unless score RR.NUM_RULES random_rules matches -2147483648..2147483647 r
 # @within random_rules:main/**
 # @within random_rules:init
 #define score_holder RR.config.individually_set_num_rules
+#> 
+# 死亡後の無敵時間(second)
+# @within random_rules:main/**
+# @within random_rules:init
+#define score_holder RR.config.invincibility_time_after_death
+#> 
+# 死亡後に縛りを無効化するか 
+# @within random_rules:main/**
+# @within random_rules:init
+#define score_holder RR.config.disable_rules_after_death
+
 
 
 # 個別
