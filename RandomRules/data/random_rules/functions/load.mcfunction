@@ -2,19 +2,8 @@
 #
 # @private
 
-#> 
-# 主な管理用のスコア  
-# @within random_rules:main/**
-# @within random_rules:init
-# @within random_rules:**
-scoreboard objectives add random_rules dummy
-
-#> 
-#プレイヤ別にルールの数を変える場合に利用するスコア
-scoreboard objectives add RR.num_rules dummy
-
 # 初期化処理
-execute unless score RR.NUM_RULES random_rules matches -2147483648..2147483647 run function random_rules:init
+execute unless data storage random_rules rules run function random_rules:init
 
 # 各ルール処理に使うスコアなどの初期化
 function random_rules:rules/load
@@ -24,15 +13,6 @@ function random_rules:rules/load
 # タグやスコアホルダーの定義
 
 # ----------  スコアホルダー  ---------#
-
-#定数
-
-#> 
-# 縛りの数（定数）
-# @within random_rules:**
-#define score_holder RR.NUM_RULES
-
-# 変数
 
 # コンフィグ系
 # 全体
