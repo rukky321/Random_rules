@@ -60,6 +60,11 @@ function random_rules:rules/load
 # @within random_rules:main/**
 # @within random_rules:init
 #define score_holder RR.config.disable_rules_after_death
+#>
+# 死亡後に縛りを無効化するか 
+# @within random_rules:main/**
+# @within random_rules:init
+#define score_holder RR.config.show_custom_death_message
 
 
 
