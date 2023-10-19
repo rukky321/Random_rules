@@ -17,6 +17,8 @@ execute if score RR.config.individually_set_num_rules random_rules matches 0 run
 execute if score RR.config.individually_set_num_rules random_rules matches 0 run scoreboard players operation @s RR.num_rules = RR.config.num_rules_when_setting random_rules
 
 # プレイヤのルール数ぶんだけルールを設定
+scoreboard players operation Util.RNG.max Util = RR.NUM_RULES random_rules
+function util:rng/generate
 execute store result storage random_rules tmp.num int 1 run scoreboard players get Util.RNG.value Util
 execute if score RR.select_rules.count random_rules < @s RR.num_rules run function random_rules:main/select_rules_loop with storage random_rules tmp
 
