@@ -42,6 +42,7 @@ tag @s add RR.has_rules
 # 使用したスコアをリセット
 scoreboard players reset RR.select_rules.tmp random_rules
 scoreboard players reset RR.select_rules.num_rules random_rules
+scoreboard players reset RR.select_rules.count random_rules
 
 # 使用したストレージをリセット
 data remove storage random_rules tmp 
@@ -55,3 +56,7 @@ function random_rules:main/set_tags
 #>
 # @within random_rules:main/select_rules**
 #define score_holder RR.select_rules.num_rules 選べるルールの総数
+#> 
+#
+# @within random_rules:main/select_rules**
+#define score_holder RR.select_rules.count

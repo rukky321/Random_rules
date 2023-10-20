@@ -22,5 +22,13 @@ execute if score RR.config.show_custom_death_message random_rules matches 1 if s
 # 死亡時の縛り内容表示がオンなら表示
 execute if score RR.config.show_rules_when_die random_rules matches 1 run function random_rules:main/show_rules
 
+# ルールによって死亡したことを示すタグをつける
+tag @s add RR.killed_by_rules
+
 # スコアをリセット
 scoreboard players reset RR.break_rule.tmp random_rules
+
+#> 
+# @within random_rules:main/break_rule
+# @within random_rules:rules/tick
+#define tag RR.killed_by_rules
