@@ -16,21 +16,8 @@ execute if score RR.config.set_same_rules random_rules matches 1 as @a[tag=!RR.s
 # 使用したタグを除去 
 tag @a[tag=RR.set_rules.target] remove RR.set_rules.target
 
-# スコアのリセット
-scoreboard players reset RR.set_rules.tmp random_rules
-scoreboard players reset RR.select_rules.count random_rules
-
-
 
 #> 
 #@private
 #define tag RR.set_rules.target
-#>
-# @private 
-#define score_holder RR.set_rules.tmp
-#> 
-#
-# @within random_rules:main/select_rules**
-# @within random_rules:main/set_rules**
-#define score_holder RR.select_rules.count
 
