@@ -53,6 +53,10 @@ execute if score RR.config.show_rules_when_setting random_rules matches 1 run fu
 # プレイヤにタグを付与
 function random_rules:main/set_tags
 
+# プレイヤの無敵時間を設定
+execute unless score @s RR.invincibility_time < RR.config.invincibility_time_after_start random_rules run scoreboard players operation @s RR.invincibility_time = RR.config.invincibility_time_after_start random_rules
+execute unless score @s RR.invincibility_time < RR.config.invincibility_time_after_start random_rules run scoreboard players operation @s RR.invincibility_time *= RR.const.20 random_rules
+
 #>
 # @within random_rules:main/select_rules**
 #define score_holder RR.select_rules.num_rules 選べるルールの総数
