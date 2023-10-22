@@ -14,8 +14,15 @@ function random_rules:rules/load
 
 # ----------  スコアホルダー  ---------#
 
+#定数
+#> 
+# 定数スコア
+# @within random_rules:**
+#define score_holder RR.const.20
+
+
 # コンフィグ系
-# 全体
+
 #> 
 # 縛り設定時にその内容を表示するか
 # @within random_rules:main/**
@@ -56,6 +63,11 @@ function random_rules:rules/load
 # @within random_rules:init
 #define score_holder RR.config.invincibility_time_after_death
 #> 
+# 縛り開始後の無敵時間(second)
+# @within random_rules:main/**
+# @within random_rules:init
+#define score_holder RR.config.invincibility_time_after_start 
+#> 
 # 死亡後に縛りを無効化するか 
 # @within random_rules:main/**
 # @within random_rules:init
@@ -65,10 +77,6 @@ function random_rules:rules/load
 # @within random_rules:main/**
 # @within random_rules:init
 #define score_holder RR.config.show_custom_death_message
-
-
-
-# 個別
 
 
 # ---------- タグ ----------#

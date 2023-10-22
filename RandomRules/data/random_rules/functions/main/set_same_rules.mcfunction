@@ -20,5 +20,9 @@ data modify storage util storage[0].data.rules set from storage random_rules tmp
 # 縛り内容を表示する設定なら表示
 execute if score RR.config.show_rules_when_setting random_rules matches 1 run function random_rules:main/show_rules
 
+# 縛り開始時の無敵時間を設定
+execute unless score @s RR.invincibility_time < RR.config.invincibility_time_after_start random_rules run scoreboard players operation @s RR.invincibility_time = RR.config.invincibility_time_after_start random_rules
+execute unless score @s RR.invincibility_time < RR.config.invincibility_time_after_start random_rules run scoreboard players operation @s RR.invincibility_time *= RR.const.20 random_rules
+
 # プレイヤにタグを付与
 function random_rules:main/set_tags
