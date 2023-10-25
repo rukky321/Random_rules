@@ -3,7 +3,7 @@
 # @within random_rules:tick
 
 # 死亡後に2重でキルされるのを防ぐための処理
-execute as @s[tag=RR.killed_by_rules] run function random_rules:rules/reset_all_score
+execute as @s[tag=RR.killed_by_rules] run function random_rules:rules/reset_some_score
 execute as @s[tag=RR.killed_by_rules] run tag @s remove RR.killed_by_rules
 
 # 各種ルールごとに処理
@@ -26,3 +26,5 @@ execute as @s[tag=RR.rules.random_day] run function random_rules:rules/random_da
 execute as @s[tag=RR.rules.no_touch_flower] run function random_rules:rules/no_touch_flower/tick
 execute as @s[tag=RR.rules.no_stuff] run function random_rules:rules/no_stuff/tick
 execute as @s[tag=RR.rules.no_full_inventory] run function random_rules:rules/no_full_inventory/tick
+execute as @s[tag=RR.rules.no_armor] run function random_rules:rules/no_armor/tick
+execute as @s[tag=RR.rules.no_lonely] run function random_rules:rules/no_lonely/tick

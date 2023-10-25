@@ -32,6 +32,9 @@ execute unless score @s RR.invincibility_time < RR.config.invincibility_time_aft
 # 縛りの無効化
 function random_rules:main/disable_rules
 
+# 一部のタグやスコアをリセット
+tag @s remove RR.no_stuff.not_max
+
 # スコアをリセット
 scoreboard players reset RR.break_rule.tmp random_rules
 

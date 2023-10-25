@@ -5,8 +5,9 @@
 # 作業用ストレージのリセット
 data remove storage random_rules tmp
 
-# 縛り関連のスコアを全てリセット
-function random_rules:rules/reset_all_score
+# 縛り関連のスコアをリセット
+execute if score RR.config.reset_all_count_when_setting random_rules matches 0 run function random_rules:rules/reset_some_score
+execute unless score RR.config.reset_all_count_when_setting random_rules matches 0 run function random_rules:rules/reset_all_score
 
 # タグの消去
 function random_rules:main/remove_tags

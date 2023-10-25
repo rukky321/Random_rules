@@ -67,7 +67,7 @@ function random_rules:rules/load
 # @within random_rules:main/**
 # @within random_rules:init
 #define score_holder RR.config.invincibility_time_after_start 
-#> 
+#>  
 # 死亡後に縛りを無効化するか 
 # @within random_rules:main/**
 # @within random_rules:init
@@ -77,6 +77,28 @@ function random_rules:rules/load
 # @within random_rules:main/**
 # @within random_rules:init
 #define score_holder RR.config.show_custom_death_message
+#>
+# 縛り設定時に時間をカウントするタイプの縛りのカウントをリセットするか
+# @within random_rules:main/**
+# @within random_rules:init
+#define score_holder RR.config.reset_all_count_when_setting
+#>
+# ゲームモード
+# @within random_rules:main/**
+# @within random_rules:init
+#define score_holder RR.config.gamemode
+#>
+# ゲームモード1における縛り変更までの時間
+# @within random_rules:main/**
+# @within random_rules:init
+#define score_holder RR.config.time_until_change_rules
+#>
+# ゲームモード2における縛り追加までの時間
+# @within random_rules:main/**
+# @within random_rules:init
+#define score_holder RR.config.time_until_add_rules
+
+
 
 
 # ---------- タグ ----------#

@@ -10,8 +10,6 @@ execute as @e[type=player,tag=RR.has_rules] if score @s RR.invincibility_time ma
 #無敵時間じゃなければ処理をする
 execute as @e[type=player,tag=RR.has_rules] unless score @s RR.invincibility_time matches 0..2147483647 run function random_rules:rules/tick
 
-execute if predicate random_rules:weather_check 
-
 
 execute as @e[type=player] if score @s random_rules matches 1 run effect give @s minecraft:resistance 5 4 
 execute as @e[type=player] if score @s random_rules matches 1 run scoreboard players set @s random_rules 0

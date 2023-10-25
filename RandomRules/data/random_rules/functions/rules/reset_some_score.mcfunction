@@ -1,4 +1,4 @@
-#> random_rules:rules/reset_all_score
+#> random_rules:rules/reset_some_score
 # 縛り関連スコアを全てリセットする。
 # @within random_rules:rules/tick
 # @within random_rules:main/**
@@ -32,8 +32,6 @@ scoreboard players reset @s RR.rules.no_shoot_arrow.bow
 scoreboard players reset @s RR.rules.no_shoot_arrow.crossbow
 scoreboard players reset @s RR.rules.no_use_rod
 scoreboard players reset @s RR.rules.no_use_elytra
-scoreboard players reset @s RR.rules.no_lonely
-scoreboard players reset @s RR.rules.no_sleepless
 
 # advancement
 advancement revoke @s only random_rules:kill_villager

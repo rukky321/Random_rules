@@ -23,7 +23,7 @@ data modify storage random_rules rules set value \
   {ID:16,name:no_touch_flower,tag:"RR.rules.no_touch_flower",detail:'{"text":"花に触れられない"}',death_message:'[{"selector":"@s"},{"text":"は花粉症がひどくて死んでしまった"}]'},\
   {ID:17,name:no_stuff,tag:"RR.rules.no_stuff",detail:'{"text":"お腹いっぱいになってはいけない"}',death_message:'[{"selector":"@s"},{"text":"は食べすぎてお腹が破裂してしまった"}]'},\
   {ID:18,name:no_full_inventory,tag:"RR.rules.no_full_inventory",detail:'{"text":"インベントリをいっぱいにできない"}',death_message:'[{"selector":"@s"},{"text":"は荷物が重すぎて潰れてしまった"}]'},\
-  {ID:19,name:no_armor,tag:"RR.rules.no_armor",detail:'{"text":"防具を着られない"}',death_message:'[{"selector":"@s"},{"text":"は防具が重すぎて潰れてしまった"}]'},\
+  {ID:19,name:no_armor,tag:"RR.rules.no_armor",detail:'{"text":"防具をつけてはいけない"}',death_message:'[{"selector":"@s"},{"text":"は防具が重すぎて潰れてしまった"}]'},\
   {ID:20,name:no_lonely,trag:"RR.rules.no_lonely",detail:'{"text":"周りにモブもしくはプレイヤーがいない状態で5分経つと死ぬ"}',death_message:'[{"selector":"@s"},{"text":"は孤独に耐えきれず爆発した"}]'},\
   {ID:21,name:no_sleepless,tag:"RR.rules.no_sleepless",detail:'{"text":"3日間一睡もしないと死ぬ"}',death_message:'[{"selector":"@s"},{"text":"は睡眠欲に負けて永遠の眠りについた"}]'},\
   {ID:22,name:no_fasting,tag:"RR.rules.no_fasting",detail:'{"text":"10分間何も食べないと死ぬ"}',death_message:'[{"selector":"@s"},{"text":"はお腹が空きすぎておかしくなってしまった"}]'},\
@@ -36,5 +36,5 @@ data modify storage random_rules rules set value \
   {ID:29,name:no_make_pet,tag:"RR.rules.no_make_pet",detail:'{"text":"動物をペットにできない"}',death_message:'[{"selector":"@s"},{"text":"は飼い犬に手を噛まれた"}]'},\
   {ID:30,name:old_age,tag:"RR.rules.old_age",detail:'{"text":"レベル50以上になったら死ぬ"}',death_message:'[{"selector":"@s"},{"text":"は老衰した"}]'},\
   {ID:31,name:no_run_when_rain,tag:"RR.rules.no_run_when_rain",detail:'{"text":"雨が降っている時に走ると死ぬ"}',death_message:'[{"selector":"@s"},{"text":"はぬかるみに足を取られて転んでしまった"}]'},\
-  {ID:32,name:no_use_totem,tag:"RR.rules.no_use_totem",detail:'{"text":"不死のトーテムを使うと死ぬ"}',death_message:'[{"selector":"@s"},{"text":"は市を越えられなかった"}]'}\
+  {ID:32,name:no_use_totem,tag:"RR.rules.no_use_totem",detail:'{"text":"不死のトーテムを使うと死ぬ"}',death_message:'[{"selector":"@s"},{"text":"は死を越えられなかった"}]'}\
 ] 
