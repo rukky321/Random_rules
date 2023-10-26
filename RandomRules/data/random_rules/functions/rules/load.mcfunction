@@ -11,6 +11,8 @@ function random_rules:rules/no_fish/load
 function random_rules:rules/no_shoot_arrow/load
 function random_rules:rules/no_use_rod/load
 function random_rules:rules/no_use_elytra/load
+function random_rules:rules/no_sleepless/load
+function random_rules:rules/no_fasting/load
 function random_rules:rules/no_drink_milk/load
 function random_rules:rules/no_use_shield/load
 
@@ -121,10 +123,10 @@ function random_rules:rules/no_use_shield/load
 # @within random_rules:rules/no_armor**
 #define tag RR.rules.no_armor
 #> 
-# 半径5m以内に5分間プレイヤか村人がいないと死ぬ
+# 半径10m以内で雷が落ちると死ぬ
 # @within random_rules:rules/tick
-# @within random_rules:rules/no_lonely**
-#define tag RR.rules.no_lonely
+# @within random_rules:rules/no_thunder**
+#define tag RR.rules.no_thunder
 #> 
 # 3日間一切寝ないと死ぬ
 # @within random_rules:rules/tick

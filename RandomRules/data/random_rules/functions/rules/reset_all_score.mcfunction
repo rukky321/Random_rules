@@ -32,13 +32,15 @@ scoreboard players reset @s RR.rules.no_shoot_arrow.bow
 scoreboard players reset @s RR.rules.no_shoot_arrow.crossbow
 scoreboard players reset @s RR.rules.no_use_rod
 scoreboard players reset @s RR.rules.no_use_elytra
-scoreboard players reset @s RR.rules.no_lonely
 scoreboard players reset @s RR.rules.no_sleepless
+scoreboard players reset @s RR.rules.no_fasting
+scoreboard players reset @s RR.rules.no_fasting.eat_cake
 scoreboard players reset @s RR.rules.no_drink_milk
 scoreboard players reset @s RR.rules.no_use_shield
 
 # advancement
 advancement revoke @s only random_rules:kill_villager
+advancement revoke @s only random_rules:consume_food
 advancement revoke @s only random_rules:trade
 # tag
 tag @s remove RR.no_stuff.not_max
