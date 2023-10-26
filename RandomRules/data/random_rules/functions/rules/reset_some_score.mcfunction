@@ -36,6 +36,7 @@ scoreboard players reset @s RR.rules.no_drink_milk
 
 # advancement
 advancement revoke @s only random_rules:kill_villager
+advancement revoke @s only random_rules:trade
 
 # tag
 tag @s remove RR.no_stuff.not_max
