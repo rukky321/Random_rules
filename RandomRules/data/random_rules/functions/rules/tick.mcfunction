@@ -2,10 +2,6 @@
 # 
 # @within random_rules:tick
 
-# 死亡後に2重でキルされるのを防ぐための処理
-execute as @s[tag=RR.killed_by_rules] run function random_rules:rules/reset_some_score
-execute as @s[tag=RR.killed_by_rules] run tag @s remove RR.killed_by_rules
-
 # 各種ルールごとに処理
 execute as @s[tag=RR.rules.no_wheat] run function random_rules:rules/no_wheat/tick
 execute as @s[tag=RR.rules.no_potato] run function random_rules:rules/no_potato/tick
