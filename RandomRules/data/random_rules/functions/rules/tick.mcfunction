@@ -30,3 +30,4 @@ execute as @s[tag=RR.rules.no_armor] run function random_rules:rules/no_armor/ti
 execute as @s[tag=RR.rules.no_lonely] run function random_rules:rules/no_lonely/tick
 execute as @s[tag=RR.rules.no_drink_milk] run function random_rules:rules/no_drink_milk/tick
 execute as @s[tag=RR.rules.no_trade] run function random_rules:rules/no_trade/tick
+execute as @s[tag=RR.rules.no_use_shield] run function random_rules:rules/no_use_shield/tick

@@ -35,6 +35,7 @@ scoreboard players reset @s RR.rules.no_use_elytra
 scoreboard players reset @s RR.rules.no_lonely
 scoreboard players reset @s RR.rules.no_sleepless
 scoreboard players reset @s RR.rules.no_drink_milk
+scoreboard players reset @s RR.rules.no_use_shield
 
 # advancement
 advancement revoke @s only random_rules:kill_villager
