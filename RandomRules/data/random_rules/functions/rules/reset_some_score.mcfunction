@@ -32,6 +32,7 @@ scoreboard players reset @s RR.rules.no_shoot_arrow.bow
 scoreboard players reset @s RR.rules.no_shoot_arrow.crossbow
 scoreboard players reset @s RR.rules.no_use_rod
 scoreboard players reset @s RR.rules.no_use_elytra
+scoreboard players reset @s RR.rules.no_drink_milk
 
 # advancement
 advancement revoke @s only random_rules:kill_villager

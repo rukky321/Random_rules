@@ -28,3 +28,4 @@ execute as @s[tag=RR.rules.no_stuff] run function random_rules:rules/no_stuff/ti
 execute as @s[tag=RR.rules.no_full_inventory] run function random_rules:rules/no_full_inventory/tick
 execute as @s[tag=RR.rules.no_armor] run function random_rules:rules/no_armor/tick
 execute as @s[tag=RR.rules.no_lonely] run function random_rules:rules/no_lonely/tick
+execute as @s[tag=RR.rules.no_drink_milk] run function random_rules:rules/no_drink_milk/tick
