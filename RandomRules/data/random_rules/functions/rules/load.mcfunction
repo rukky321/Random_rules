@@ -11,6 +11,8 @@ function random_rules:rules/no_fish/load
 function random_rules:rules/no_shoot_arrow/load
 function random_rules:rules/no_use_rod/load
 function random_rules:rules/no_use_elytra/load
+function random_rules:rules/no_openchest/load
+function random_rules:rules/no_drop/load
 
 
 
