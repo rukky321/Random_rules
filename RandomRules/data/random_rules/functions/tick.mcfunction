@@ -2,6 +2,9 @@
 #
 # @private
 
+# ゲーム関連の処理
+function random_rules:game/tick
+
 #死亡時に行う処理
 execute as @e[type=player,tag=RR.has_rules] if score @s RR.death matches 1.. run function random_rules:main/death
 scoreboard players reset @e[type=player] RR.death

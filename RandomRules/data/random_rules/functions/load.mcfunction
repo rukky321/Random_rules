@@ -7,7 +7,7 @@ execute unless data storage random_rules rules run function random_rules:init
 
 # 各ルール処理に使うスコアなどの初期化
 function random_rules:rules/load
-
+function random_rules:game/load
 
 
 # タグやスコアホルダーの定義
@@ -85,11 +85,13 @@ function random_rules:rules/load
 #>
 # ゲームモード
 # @within random_rules:main/**
+# @within random_rules:game/**
 # @within random_rules:init
 #define score_holder RR.config.gamemode
 #>
 # ゲームモード1における縛り変更までの時間
 # @within random_rules:main/**
+# @within random_rules:game/**
 # @within random_rules:init
 #define score_holder RR.config.time_until_change_rules
 #>
