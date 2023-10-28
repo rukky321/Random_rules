@@ -33,7 +33,7 @@ data modify storage random_rules rules set value \
   {ID:26,name:no_ride,tag:"RR.rules.no_ride",detail:'{"text":"乗り物に乗ると死ぬ"}',death_message:'[{"selector":"@s"},{"text":"は乗り物の乗り心地が悪くて死んでしまった"}]'},\
   {ID:27,name:social_distance,tag:"RR.rules.social_distance",detail:'{"text":"プレイヤか村人の2m以内に近づくと死ぬ"}',death_message:'[{"selector":"@s"},{"text":"は十分なソーシャルディスタンスを取れなかった"}]'},\
   {ID:28,name:no_attack_chicken,tag:"RR.rules.no_attack_chicken",detail:'{"text":"ニワトリを攻撃できない"}',death_message:'[{"selector":"@s"},{"text":"はニワトリに反撃されて死んでしまった"}]'},\ 
-  {ID:29,name:no_make_pet,tag:"RR.rules.no_make_pet",detail:'{"text":"動物をペットにできない"}',death_message:'[{"selector":"@s"},{"text":"は飼い犬に手を噛まれた"}]'},\
+  {ID:29,name:no_tame_animal,tag:"RR.rules.no_tame_animal",detail:'{"text":"動物をペットにできない"}',death_message:'[{"selector":"@s"},{"text":"は飼い犬に手を噛まれた"}]'},\
   {ID:30,name:old_age,tag:"RR.rules.old_age",detail:'{"text":"レベル50以上になったら死ぬ"}',death_message:'[{"selector":"@s"},{"text":"は老衰した"}]'},\
   {ID:31,name:no_run_when_rain,tag:"RR.rules.no_run_when_rain",detail:'{"text":"雨が降っている時に走ると死ぬ"}',death_message:'[{"selector":"@s"},{"text":"はぬかるみに足を取られて転んでしまった"}]'},\
   {ID:32,name:no_use_totem,tag:"RR.rules.no_use_totem",detail:'{"text":"不死のトーテムを使うと死ぬ"}',death_message:'[{"selector":"@s"},{"text":"は死を越えられなかった"}]'},\
