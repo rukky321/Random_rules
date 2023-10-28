@@ -37,6 +37,8 @@ scoreboard players reset @s RR.rules.no_fasting
 scoreboard players reset @s RR.rules.no_fasting.eat_cake
 scoreboard players reset @s RR.rules.no_drink_milk
 scoreboard players reset @s RR.rules.no_use_shield
+scoreboard players reset @s RR.rules.no_openchest
+scoreboard players reset @s RR.rules.no_drop
 
 # advancement
 advancement revoke @s only random_rules:kill_villager
