@@ -40,6 +40,8 @@ scoreboard players reset @s RR.rules.no_use_shield
 advancement revoke @s only random_rules:kill_villager
 advancement revoke @s only random_rules:consume_food
 advancement revoke @s only random_rules:trade
+advancement revoke @s only random_rules:attack_chicken
+advancement revoke @s only random_rules:tame_animal
 
 # tag
 tag @s remove RR.no_stuff.not_max

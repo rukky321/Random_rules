@@ -170,8 +170,8 @@ function random_rules:rules/no_use_shield/load
 #> 
 # 動物をペットにすると死ぬ
 # @within random_rules:rules/tick
-# @within random_rules:rules/no_make_pet**
-#define tag RR.rules.no_make_pet
+# @within random_rules:rules/no_tame_animal**
+#define tag RR.rules.no_tame_animal
 #> 
 # レベル50以上になったら死ぬ
 # @within random_rules:rules/tick

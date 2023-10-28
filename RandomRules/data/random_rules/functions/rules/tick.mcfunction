@@ -30,3 +30,6 @@ execute as @s[tag=RR.rules.no_drink_milk] run function random_rules:rules/no_dri
 execute as @s[tag=RR.rules.no_trade] run function random_rules:rules/no_trade/tick
 execute as @s[tag=RR.rules.no_use_shield] run function random_rules:rules/no_use_shield/tick
 execute as @s[tag=RR.rules.no_ride] run function random_rules:rules/no_ride/tick
+execute as @s[tag=RR.rules.social_distance] run function random_rules:rules/social_distance/tick
+execute as @s[tag=RR.rules.no_attack_chicken] run function random_rules:rules/no_attack_chicken/tick
+execute as @s[tag=RR.rules.no_tame_animal] run function random_rules:rules/no_tame_animal/tick
