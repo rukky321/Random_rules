@@ -37,6 +37,7 @@ scoreboard players reset @s RR.rules.no_fasting
 scoreboard players reset @s RR.rules.no_fasting.eat_cake
 scoreboard players reset @s RR.rules.no_drink_milk
 scoreboard players reset @s RR.rules.no_use_shield
+scoreboard players reset @s RR.rules.no_run_when_rain
 scoreboard players reset @s RR.rules.no_openchest
 scoreboard players reset @s RR.rules.no_drop
 
@@ -46,5 +47,6 @@ advancement revoke @s only random_rules:consume_food
 advancement revoke @s only random_rules:trade
 advancement revoke @s only random_rules:attack_chicken
 advancement revoke @s only random_rules:tame_animal
+advancement revoke @s only random_rules:use_totem
 # tag
 tag @s remove RR.no_stuff.not_max
