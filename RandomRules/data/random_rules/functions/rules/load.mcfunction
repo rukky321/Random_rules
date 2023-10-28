@@ -15,6 +15,7 @@ function random_rules:rules/no_sleepless/load
 function random_rules:rules/no_fasting/load
 function random_rules:rules/no_drink_milk/load
 function random_rules:rules/no_use_shield/load
+function random_rules:rules/no_run_when_rain/load
 function random_rules:rules/no_openchest/load
 function random_rules:rules/no_drop/load
 
@@ -186,7 +187,7 @@ function random_rules:rules/no_drop/load
 # @within random_rules:rules/no_run_when_rain**
 #define tag RR.rules.no_run_when_rain
 #> 
-# 雨の日に走ると死ぬ
+# トーテムを使うと死ぬ
 # @within random_rules:rules/tick
 # @within random_rules:rules/no_use_totem**
 #define tag RR.rules.no_use_totem
