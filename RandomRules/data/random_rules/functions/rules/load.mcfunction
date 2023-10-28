@@ -15,6 +15,9 @@ function random_rules:rules/no_sleepless/load
 function random_rules:rules/no_fasting/load
 function random_rules:rules/no_drink_milk/load
 function random_rules:rules/no_use_shield/load
+function random_rules:rules/no_openchest/load
+function random_rules:rules/no_drop/load
+
 
 
 

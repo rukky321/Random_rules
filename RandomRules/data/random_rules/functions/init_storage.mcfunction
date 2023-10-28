@@ -36,5 +36,10 @@ data modify storage random_rules rules set value \
   {ID:29,name:no_tame_animal,tag:"RR.rules.no_tame_animal",detail:'{"text":"動物をペットにできない"}',death_message:'[{"selector":"@s"},{"text":"は飼い犬に手を噛まれた"}]'},\
   {ID:30,name:old_age,tag:"RR.rules.old_age",detail:'{"text":"レベル50以上になったら死ぬ"}',death_message:'[{"selector":"@s"},{"text":"は老衰した"}]'},\
   {ID:31,name:no_run_when_rain,tag:"RR.rules.no_run_when_rain",detail:'{"text":"雨が降っている時に走ると死ぬ"}',death_message:'[{"selector":"@s"},{"text":"はぬかるみに足を取られて転んでしまった"}]'},\
-  {ID:32,name:no_use_totem,tag:"RR.rules.no_use_totem",detail:'{"text":"不死のトーテムを使うと死ぬ"}',death_message:'[{"selector":"@s"},{"text":"は死を越えられなかった"}]'}\
-] 
+  {ID:32,name:no_use_totem,tag:"RR.rules.no_use_totem",detail:'{"text":"不死のトーテムを使うと死ぬ"}',death_message:'[{"selector":"@s"},{"text":"は死を越えられなかった"}]'},\
+  {ID:50,name:no_touch_coldblock,tag:"RR.rules.no_touch_coldblock",detail:'{"text":"冷たいブロックの上を歩くと死ぬ"}',death_message:'[{"selector":"@s"},{"text":"は凍傷で死んだ"}]'},\
+  {ID:51,name:no_touch_oreblock,tag:"RR.rules.no_touch_oreblock",detail:'{"text":"鉱石ブロックの上を歩くと死ぬ"}',death_message:'[{"selector":"@s"},{"text":"は鉱石の破片が足に刺さった"}]'},\
+  {ID:52,name:no_touch_hotblock,tag:"RR.rules.no_touch_hotblock",detail:'{"text":"熱いブロックの上を歩くと死ぬ"}',death_message:'[{"selector":"@s"},{"text":"は火傷で死んだ"}]'},\
+  {ID:53,name:no_openchest,tag:"RR.rules.no_openchest",detail:'{"text":"チェストを開けると死ぬ"}',death_message:'[{"selector":"@s"},{"text":"が開けたチェストはミミックだった"}]'},\
+  {ID:54,name:no_drop,tag:"RR.rules.no_drop",detail:'{"text":"アイテムを捨てると死ぬ"}',death_message:'[{"selector":"@s"},{"text":"はポイ捨てしたので罰を受けた"}]'}\
+]
