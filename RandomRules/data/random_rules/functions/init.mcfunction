@@ -17,6 +17,11 @@ scoreboard objectives add RR.num_rules dummy
 #プレイヤの無敵時間を設定するためのスコア
 # @within random_rules:main/**
 scoreboard objectives add RR.invincibility_time dummy
+#> 
+# プレイヤの死亡検知用
+# @within random_rules:main/**
+# @within random_rules:tick
+scoreboard objectives add RR.death deathCount 
 
 
 #スコアの初期値を設定

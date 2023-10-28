@@ -2,10 +2,6 @@
 # 
 # @within random_rules:tick
 
-# 死亡後に2重でキルされるのを防ぐための処理
-execute as @s[tag=RR.killed_by_rules] run function random_rules:rules/reset_some_score
-execute as @s[tag=RR.killed_by_rules] run tag @s remove RR.killed_by_rules
-
 # 各種ルールごとに処理
 execute as @s[tag=RR.rules.no_wheat] run function random_rules:rules/no_wheat/tick
 execute as @s[tag=RR.rules.no_potato] run function random_rules:rules/no_potato/tick
@@ -27,4 +23,10 @@ execute as @s[tag=RR.rules.no_touch_flower] run function random_rules:rules/no_t
 execute as @s[tag=RR.rules.no_stuff] run function random_rules:rules/no_stuff/tick
 execute as @s[tag=RR.rules.no_full_inventory] run function random_rules:rules/no_full_inventory/tick
 execute as @s[tag=RR.rules.no_armor] run function random_rules:rules/no_armor/tick
-execute as @s[tag=RR.rules.no_lonely] run function random_rules:rules/no_lonely/tick
+execute as @s[tag=RR.rules.no_thunder] run function random_rules:rules/no_thunder/tick
+execute as @s[tag=RR.rules.no_sleepless] run function random_rules:rules/no_sleepless/tick
+execute as @s[tag=RR.rules.no_fasting] run function random_rules:rules/no_fasting/tick
+execute as @s[tag=RR.rules.no_drink_milk] run function random_rules:rules/no_drink_milk/tick
+execute as @s[tag=RR.rules.no_trade] run function random_rules:rules/no_trade/tick
+execute as @s[tag=RR.rules.no_use_shield] run function random_rules:rules/no_use_shield/tick
+execute as @s[tag=RR.rules.no_ride] run function random_rules:rules/no_ride/tick

@@ -24,7 +24,7 @@ data modify storage random_rules rules set value \
   {ID:17,name:no_stuff,tag:"RR.rules.no_stuff",detail:'{"text":"お腹いっぱいになってはいけない"}',death_message:'[{"selector":"@s"},{"text":"は食べすぎてお腹が破裂してしまった"}]'},\
   {ID:18,name:no_full_inventory,tag:"RR.rules.no_full_inventory",detail:'{"text":"インベントリをいっぱいにできない"}',death_message:'[{"selector":"@s"},{"text":"は荷物が重すぎて潰れてしまった"}]'},\
   {ID:19,name:no_armor,tag:"RR.rules.no_armor",detail:'{"text":"防具をつけてはいけない"}',death_message:'[{"selector":"@s"},{"text":"は防具が重すぎて潰れてしまった"}]'},\
-  {ID:20,name:no_lonely,trag:"RR.rules.no_lonely",detail:'{"text":"周りにモブもしくはプレイヤーがいない状態で5分経つと死ぬ"}',death_message:'[{"selector":"@s"},{"text":"は孤独に耐えきれず爆発した"}]'},\
+  {ID:20,name:no_thunder,tag:"RR.rules.no_thunder",detail:'{"text":"近くに雷が落ちると死ぬ"}',death_message:'[{"selector":"@s"},{"text":"は雷に驚いてショック死した"}]'},\
   {ID:21,name:no_sleepless,tag:"RR.rules.no_sleepless",detail:'{"text":"3日間一睡もしないと死ぬ"}',death_message:'[{"selector":"@s"},{"text":"は睡眠欲に負けて永遠の眠りについた"}]'},\
   {ID:22,name:no_fasting,tag:"RR.rules.no_fasting",detail:'{"text":"10分間何も食べないと死ぬ"}',death_message:'[{"selector":"@s"},{"text":"はお腹が空きすぎておかしくなってしまった"}]'},\
   {ID:23,name:no_drink_milk,tag:"RR.rules.no_drink_milk",detail:'{"text":"牛乳を飲めない"}',death_message:'[{"selector":"@s"},{"text":"は牛乳を飲んでお腹を壊してしまった"}]'},\

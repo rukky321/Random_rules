@@ -25,15 +25,8 @@ execute if score RR.config.show_rules_when_die random_rules matches 1 run functi
 # ルールによって死亡したことを示すタグをつける
 tag @s add RR.killed_by_rules
 
-# 死亡後の無敵時間を設定
-execute unless score @s RR.invincibility_time < RR.config.invincibility_time_after_death random_rules run scoreboard players operation @s RR.invincibility_time = RR.config.invincibility_time_after_death random_rules
-execute unless score @s RR.invincibility_time < RR.config.invincibility_time_after_death random_rules run scoreboard players operation @s RR.invincibility_time *= RR.const.20 random_rules
-
 # 縛りの無効化
 function random_rules:main/disable_rules
-
-# 一部のタグやスコアをリセット
-tag @s remove RR.no_stuff.not_max
 
 # スコアをリセット
 scoreboard players reset RR.break_rule.tmp random_rules
