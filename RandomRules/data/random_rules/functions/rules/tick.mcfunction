@@ -41,3 +41,7 @@ execute as @s[tag=RR.rules.no_touch_oreblock] run function random_rules:rules/no
 execute as @s[tag=RR.rules.no_touch_hotblock] run function random_rules:rules/no_touch_hotblock/tick
 execute as @s[tag=RR.rules.no_openchest] run function random_rules:rules/no_openchest/tick
 execute as @s[tag=RR.rules.no_drop] run function random_rules:rules/no_drop/tick
+
+# 一部の処理
+execute if data entity @s SleepingX run scoreboard players reset @s RR.rules.no_sleepless
+execute unless data entity @s SleepingX run scoreboard players add @s RR.rules.no_sleepless 1
