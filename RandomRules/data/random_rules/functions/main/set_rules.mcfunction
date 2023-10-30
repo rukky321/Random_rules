@@ -9,7 +9,7 @@ execute if score RR.config.set_same_rules random_rules matches 0 as @a[tag= RR.p
 # 適当に一人を選んでルールを設定し、後からそれを全員にコピー
 execute if score RR.config.set_same_rules random_rules matches 1 run tag @r[tag=RR.player] add RR.set_rules.target
 execute if score RR.config.set_same_rules random_rules matches 1 as @a[tag=RR.set_rules.target] run function random_rules:main/select_rules
-execute if score RR.config.set_same_rules random_rules matches 1 run data modify storage random_rules copy set from storage util storage[0].data.rules
+execute if score RR.config.set_same_rules random_rules matches 1 run data modify storage random_rules copy set from storage util storage[0].data.RR.rules
 execute if score RR.config.set_same_rules random_rules matches 1 as @a[tag=!RR.set_rules.target] if entity @s[tag=RR.player] run function random_rules:main/set_same_rules
 execute if score RR.config.set_same_rules random_rules matches 1 run data remove storage random_rules copy
 
