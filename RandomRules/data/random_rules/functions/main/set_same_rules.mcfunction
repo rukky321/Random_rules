@@ -22,5 +22,13 @@ execute if score RR.config.show_rules_when_setting random_rules matches 1 run fu
 execute unless score @s RR.invincibility_time < RR.config.invincibility_time_after_start random_rules run scoreboard players operation @s RR.invincibility_time = RR.config.invincibility_time_after_start random_rules
 execute unless score @s RR.invincibility_time < RR.config.invincibility_time_after_start random_rules run scoreboard players operation @s RR.invincibility_time *= RR.const.20 random_rules
 
+say im copy
+
 # プレイヤにタグを付与
 function random_rules:main/set_tags
+
+#タグを付与w
+tag @s add RR.has_rules
+
+
+
