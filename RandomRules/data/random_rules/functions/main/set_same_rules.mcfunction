@@ -13,7 +13,7 @@ function random_rules:main/remove_tags
 function util:storage/set_storage
 
 # 先にルールを設定したプレイヤのルールをコピーする
-data modify storage util storage[0].data.rules set from storage random_rules copy
+data modify storage util storage[0].data.RR.rules set from storage random_rules copy
 
 
 # 縛り開始時の無敵時間を設定
