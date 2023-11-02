@@ -23,7 +23,7 @@ data modify storage random_rules rules set value \
   {ID:16,name:no_touch_flower,tag:"RR.rules.no_touch_flower",detail:'{"text":"花に触れられない"}',death_message:'[{"selector":"@s"},{"text":"は花粉症がひどくて死んでしまった"}]'},\
   {ID:17,name:no_stuff,tag:"RR.rules.no_stuff",detail:'{"text":"お腹いっぱいになってはいけない"}',death_message:'[{"selector":"@s"},{"text":"は食べすぎてお腹が破裂してしまった"}]'},\
   {ID:18,name:no_full_inventory,tag:"RR.rules.no_full_inventory",detail:'{"text":"インベントリをいっぱいにできない"}',death_message:'[{"selector":"@s"},{"text":"は荷物が重すぎて潰れてしまった"}]'},\
-  {ID:19,name:no_armor,tag:"RR.rules.no_armor",detail:'{"text":"防具をつけてはいけない"}',death_message:'[{"selector":"@s"},{"text":"は防具が重すぎて潰れてしまった"}]'},\
+  {ID:19,name:no_armor,tag:"RR.rules.no_armor",detail:'{"text":"防具を全身につけてはいけない"}',death_message:'[{"selector":"@s"},{"text":"は防具が重すぎて潰れてしまった"}]'},\
   {ID:20,name:no_thunder,tag:"RR.rules.no_thunder",detail:'{"text":"近くに雷が落ちると死ぬ"}',death_message:'[{"selector":"@s"},{"text":"は雷に驚いてショック死した"}]'},\
   {ID:21,name:no_sleepless,tag:"RR.rules.no_sleepless",detail:'{"text":"3日間一睡もしないと死ぬ"}',death_message:'[{"selector":"@s"},{"text":"は睡眠欲に負けて永遠の眠りについた"}]'},\
   {ID:22,name:no_fasting,tag:"RR.rules.no_fasting",detail:'{"text":"10分間何も食べないと死ぬ"}',death_message:'[{"selector":"@s"},{"text":"はお腹が空きすぎておかしくなってしまった"}]'},\
